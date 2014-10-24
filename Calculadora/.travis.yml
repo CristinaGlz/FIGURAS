@@ -9,8 +9,7 @@ before_script:
 - flake8 -max-complexity=3 --exclude=*.txt,*.md --max-line-length=200 *
 
 script:
-
-- cd unittest
+- cd UnitTest
 - python TestCalculadora.py -v
 - coverage run --branch TestCalculadora.py
 - coverage report -m
