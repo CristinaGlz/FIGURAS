@@ -11,5 +11,5 @@ before_script:
 script:
 - cd UnitTest
 - python TestCalculadora.py -v
-- coverage run --branch TestCalculadora.py
+- coverage run --branch TestCalculatadora.py
 - coverage report -m
