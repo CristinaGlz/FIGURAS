@@ -10,7 +10,6 @@ before_script:
 
 script:
 
-- letture AceptaceTest
 - cd unittest
 - python TestCalculadora.py -v
 - coverage run --branch TestCalculadora.py
