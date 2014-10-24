@@ -6,11 +6,11 @@ install:
 -"pip install -r requeriments.txt"
 
 before_script:
-- autopep8 -ir *
-- flake8 -max-complexity=3 --exclude=*.txt,*.md --max-line-length=200 *
+- autopep8 -ir *.py
+- flake8 -max-complexity=3 --exclude=*.txt,*.md --max-line-length=200 *.py
 
 script:
 - cd UnitTest
-- python TestCalculadora.py -v
+- python TestCalculatadora.py -v
 - coverage run --branch TestCalculatadora.py
 - coverage report -m
